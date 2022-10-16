@@ -1,0 +1,17 @@
+.detail-viewer {
+    display: flex;
+    margin: 10px 10%;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.detail-viewer__name{
+    padding: 10px;
+    margin: auto;
+    color: white;
+}
+.detail-viewer__age{
+    padding: 10px;
+    margin: auto;
+    color: white;
+}
+

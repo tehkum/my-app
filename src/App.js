@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState }from "react";
+import Details from "./components/viewer/Details";
+import InputViewer from "./components/input/InputViewer";
 
-function App() {
-  return (
+
+function App(props) {
+  var [dummyDetails, setDummyDetails] = useState([]);
+  
+  function userInfoHandler(userData){
+    setDummyDetails((prevUserData) => {
+      return[userData, ...prevUserData];
+    });
+    console.log(userData);
+  }
+
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputViewer onSelectData={userInfoHandler}/>     
+      <div className="main-box">
+        <Details items={dummyDetails}/>
+      </div>
     </div>
   );
 }
-
 export default App;

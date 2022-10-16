@@ -1,0 +1,38 @@
+form{
+    display : flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #a892ee;
+    box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 0.75);
+
+}
+label {
+    font-weight: bold;
+    font-size: larger;
+    font-family: sans-serif; 
+    color: white;
+    margin: 10px auto;
+}
+input {
+    border: none;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 17px;
+
+}
+button {
+    width: 30%;
+    margin: 20px auto;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    box-shadow: 10px 10px 54px -6px rgba(0, 0, 0, 0.75);
+
+}
+
